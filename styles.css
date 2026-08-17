@@ -7,8 +7,8 @@
   --surface: rgba(255, 255, 255, .32);
   --accent: #e6532f;
   --success: #4f9460;
-  --card: #151515;
-  --card-ink: #fff;
+  --card: #fff;
+  --card-ink: #151515;
 }
 
 :root[data-theme="dark"] {
