@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="振毫刘（LiudadeA）的个人主页，记录自动化、嵌入式与实用开发工具。" />
+    <meta name="theme-color" content="#f4f1ea" />
+    <title>LiudadeA — Developer & Builder</title>
+    <script>
+      (() => {
+        const saved = localStorage.getItem("theme");
+        const dark = saved === "dark" || (!saved && matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav shell">
+      <a class="brand" href="#top" aria-label="返回首页">LD<span>.</span></a>
+      <div class="nav-right">
+        <nav aria-label="主导航">
+          <a href="#about">关于</a>
+          <a href="#projects">项目</a>
+          <a href="#contact">联系</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="切换深色模式" title="切换深色模式">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero shell" id="top">
+        <div class="eyebrow"><span></span> OPEN TO GOOD IDEAS</div>
+        <h1>你好，我是 <em>LiudadeA</em>。<br />我用代码解决真实问题。</h1>
+        <p class="hero-copy">关注自动化、嵌入式与实用开发工具。喜欢简洁的产品、清晰的代码，以及把一个想法真正做出来的过程。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/liudadeA" target="_blank" rel="noreferrer">查看 GitHub <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="#projects">浏览项目</a>
+        </div>
+        <div class="scroll-note" aria-hidden="true">SCROLL <span></span></div>
+      </section>
+
+      <section class="about shell section" id="about">
+        <p class="section-index">01 / 关于我</p>
+        <div class="about-grid">
+          <h2>持续学习，<br />保持好奇。</h2>
+          <div class="about-copy">
+            <p>我是振毫刘。我享受从需求出发拆解问题，再用软件或硬件做出可靠方案的过程。目前持续探索自动化控制、Python 工具、前端体验与 AI 辅助开发。</p>
+            <div class="skills" aria-label="技术方向">
+              <span>Python</span><span>JavaScript</span><span>C / STM32</span><span>Automation</span><span>AI Tools</span><span>Open Source</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects shell section" id="projects">
+        <p class="section-index">02 / 最近在做</p>
+        <div class="section-heading">
+          <h2>最近项目</h2>
+          <a href="https://github.com/liudadeA?tab=repositories" target="_blank" rel="noreferrer">全部仓库 ↗</a>
+        </div>
+        <div class="project-list">
+          <a class="project" href="https://github.com/liudadeA/minecraft-server-setup-blog" target="_blank" rel="noreferrer">
+            <span class="project-number">01</span>
+            <div><h3>Minecraft Server Setup Blog</h3><p>Minecraft 服务器搭建博客，包含静态网站与自动化部署脚本。</p></div>
+            <span class="project-stack">HTML · 2026.08</span><span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project" href="https://github.com/liudadeA/Roco-stm32" target="_blank" rel="noreferrer">
+            <span class="project-number">02</span>
+            <div><h3>Roco STM32</h3><p>基于 STM32 的嵌入式开发与控制实践。</p></div>
+            <span class="project-stack">C · 2026.05</span><span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project" href="https://github.com/liudadeA/zhihuishu-copy-and-paste" target="_blank" rel="noreferrer">
+            <span class="project-number">03</span>
+            <div><h3>Zhihuishu Copy &amp; Paste</h3><p>解除智慧树网的复制粘贴限制，让文本输入与整理更方便。</p></div>
+            <span class="project-stack">JavaScript · 2026.01</span><span class="project-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact shell section" id="contact">
+        <p class="section-index">03 / 联系我</p>
+        <div class="contact-card">
+          <p>有一个有趣的想法？</p>
+          <h2>一起做点好东西。</h2>
+          <a class="button primary light" href="https://github.com/liudadeA" target="_blank" rel="noreferrer">在 GitHub 找我 <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell"><p>© <span id="year"></span> LiudadeA</p><p>Built with curiosity and code.</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
