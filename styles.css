@@ -20,8 +20,8 @@
   --surface: rgba(255, 255, 255, .035);
   --accent: #ff7653;
   --success: #72bd83;
-  --card: #ece8df;
-  --card-ink: #181816;
+  --card: #10100f;
+  --card-ink: #f4f1ea;
 }
 
 * { box-sizing: border-box; }
